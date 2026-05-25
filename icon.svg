@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1a1a2e"></rect>
+  
+  <rect x="120" y="130" width="272" height="300" rx="12" fill="#16213e"></rect>
+  <rect x="120" y="130" width="134" height="300" rx="12" fill="#16213e"></rect>
+  <line x1="254" y1="130" x2="254" y2="430" stroke="#0f3460" stroke-width="8"></line>
+  
+  <circle cx="256" cy="220" r="48" fill="none" stroke="#4ade80" stroke-width="10" opacity="0.8"></circle>
+  <line x1="256" y1="155" x2="256" y2="172" stroke="#4ade80" stroke-width="8" stroke-linecap="round"></line>
+  <line x1="256" y1="268" x2="256" y2="285" stroke="#4ade80" stroke-width="8" stroke-linecap="round"></line>
+  <line x1="191" y1="220" x2="208" y2="220" stroke="#4ade80" stroke-width="8" stroke-linecap="round"></line>
+  <line x1="304" y1="220" x2="321" y2="220" stroke="#4ade80" stroke-width="8" stroke-linecap="round"></line>
+  
+  <text x="256" y="390" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#4ade80" text-anchor="middle" opacity="0.9">Luz</text>
+</svg>
