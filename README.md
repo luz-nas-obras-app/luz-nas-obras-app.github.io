@@ -15,6 +15,7 @@ Arquivos principais:
 
 - `index.html`: apresentacao publica do projeto.
 - `manual.html`: manual basico do estudante.
+- `privacidade.html`: politica inicial de privacidade, LGPD e compromisso de gratuidade.
 - `social-preview.png`: imagem social usada em compartilhamentos.
 
 ## Publicacao no GitHub Pages
@@ -25,5 +26,5 @@ a raiz do repositorio.
 
 ## Pendencias institucionais
 
-- Adicionar os links institucionais de contato e politica de privacidade quando aprovados.
-- Confirmar o repositorio final de publicacao antes do primeiro push oficial.
+- Revisar a politica de privacidade antes da publicacao em lojas de aplicativos.
+- Adicionar termos complementares se uma loja exigir textos especificos.

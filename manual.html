@@ -184,6 +184,12 @@
       font-size: 0.9rem;
     }
 
+    .footer-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
     @media (max-width: 640px) {
       .page { width: min(100% - 1.25rem, 920px); padding-top: 1rem; }
       .topbar { align-items: flex-start; flex-direction: column; margin-bottom: 3rem; }
@@ -324,7 +330,11 @@
 
     <footer>
       <span>Estudo Espírita-Cristão · Gratuito para sempre</span>
-      <a href="https://luz-nas-obras.vercel.app">Abrir o aplicativo</a>
+      <div class="footer-links">
+        <a href="privacidade.html">Privacidade</a>
+        <a href="mailto:luz.nas.obras@gmail.com">Contato</a>
+        <a href="https://luz-nas-obras.vercel.app">Abrir o aplicativo</a>
+      </div>
     </footer>
   </main>
 </body>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacidade e compromisso | Luz nas Obras</title>
+  <meta name="description" content="Política inicial de privacidade, uso de dados e compromisso de gratuidade do Luz nas Obras.">
+  <meta name="theme-color" content="#141728">
+  <link rel="canonical" href="https://luz-nas-obras-app.github.io/privacidade.html">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark: #1a1a2e;
+      --dark-surface: #16213e;
+      --vine: #4ade80;
+      --vine-light: #86efac;
+      --light: #e0d7c1;
+      --muted: #a9a18f;
+      --gold: #c4a45a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--dark);
+      color: var(--light);
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+    .page {
+      width: min(920px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2rem 0 4rem;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 4rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      color: var(--light);
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+    }
+
+    .brand span,
+    h1,
+    h2 {
+      font-family: 'Crimson Pro', Georgia, serif;
+      font-weight: 500;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0.55rem 1.15rem;
+      border-radius: 999px;
+      border: 1px solid rgba(224, 215, 193, 0.16);
+      color: var(--light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: transform 0.15s, border-color 0.2s, background 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(74, 222, 128, 0.35);
+      background: rgba(74, 222, 128, 0.08);
+    }
+
+    .btn-primary {
+      background: var(--vine);
+      border-color: var(--vine);
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .hero {
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(224, 215, 193, 0.12);
+      margin-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      display: block;
+      color: var(--vine-light);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 7vw, 5.2rem);
+      line-height: 0.98;
+      margin-bottom: 1.25rem;
+    }
+
+    .lead {
+      max-width: 760px;
+      color: rgba(224, 215, 193, 0.84);
+      font-size: 1.08rem;
+    }
+
+    .section {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(224, 215, 193, 0.08);
+    }
+
+    h2 {
+      color: var(--light);
+      font-size: clamp(1.65rem, 4vw, 2.2rem);
+      margin-bottom: 0.75rem;
+    }
+
+    p,
+    li {
+      color: rgba(224, 215, 193, 0.82);
+    }
+
+    p + p { margin-top: 0.7rem; }
+    ul { padding-left: 1.25rem; margin-top: 0.7rem; }
+    li + li { margin-top: 0.35rem; }
+    strong { color: var(--light); font-weight: 500; }
+
+    .note {
+      margin: 2rem 0;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(74, 222, 128, 0.16);
+      border-radius: 10px;
+      background: rgba(22, 33, 62, 0.78);
+      color: rgba(224, 215, 193, 0.86);
+    }
+
+    .contact {
+      color: var(--vine-light);
+      text-decoration: none;
+    }
+
+    .contact:hover { text-decoration: underline; }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 640px) {
+      .page { width: min(100% - 1.25rem, 920px); padding-top: 1rem; }
+      .topbar { align-items: flex-start; flex-direction: column; margin-bottom: 3rem; }
+      .top-actions { justify-content: flex-start; width: 100%; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="Luz nas Obras">
+        <span>Luz nas Obras</span>
+      </a>
+      <div class="top-actions">
+        <a href="index.html" class="btn">Voltar para a apresentação</a>
+        <a href="https://luz-nas-obras.vercel.app" class="btn btn-primary">Abrir o app</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <span class="eyebrow">Privacidade e compromisso</span>
+      <h1>Uso de dados com respeito ao estudo.</h1>
+      <p class="lead">
+        O Luz nas Obras existe para apoiar o estudo Espírita-Cristão de forma gratuita,
+        acolhedora e responsável. Esta página resume como tratamos dados pessoais,
+        registros de estudo e recursos de apoio do aplicativo.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>1. Finalidade do aplicativo</h2>
+      <p>
+        O Luz nas Obras é disponibilizado para estudo Espírita-Cristão, reunindo obras
+        doutrinárias, Bíblia, anotações, progresso de leitura, busca, recursos offline
+        e apoio de inteligência artificial por meio do Lume.
+      </p>
+      <p>
+        O aplicativo é gratuito, não possui anúncios e não tem finalidade comercial de
+        venda de dados dos estudantes.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>2. Dados que podem ser tratados</h2>
+      <p>Dependendo do uso do aplicativo, podem ser armazenadas informações como:</p>
+      <ul>
+        <li>dados básicos de conta e autenticação, como identificador de usuário e e-mail;</li>
+        <li>anotações, reflexões, estudos salvos, vínculos criados e progresso de leitura;</li>
+        <li>feedbacks enviados pelo estudante, incluindo texto, tela de origem e informações técnicas do aparelho quando disponíveis;</li>
+        <li>preferências de leitura, versão bíblica, tamanho de fonte e configurações do app;</li>
+        <li>tokens técnicos para notificações, quando o estudante ativa esse recurso no aparelho;</li>
+        <li>registros técnicos necessários para segurança, diagnóstico, funcionamento e correção de erros.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>3. Como usamos esses dados</h2>
+      <p>Os dados são usados para:</p>
+      <ul>
+        <li>permitir que o estudante salve e sincronize seus estudos entre aparelhos;</li>
+        <li>manter leituras, anotações, progresso, histórico e preferências;</li>
+        <li>enviar lembretes ou notificações quando autorizados;</li>
+        <li>melhorar a experiência, corrigir erros e responder feedbacks;</li>
+        <li>preservar a segurança e o funcionamento adequado do aplicativo.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>4. Lume e recursos de IA</h2>
+      <p>
+        O Lume é um assistente de estudo com IA, voltado ao escopo Espírita-Cristão.
+        Ao usar recursos de IA, a pergunta ou o conteúdo enviado pode ser processado
+        por serviços externos necessários para gerar a resposta.
+      </p>
+      <p>
+        O Lume não é uma pessoa, não representa orientação espiritual e pode cometer
+        erros. Suas respostas devem ser conferidas nas fontes e usadas como apoio ao
+        estudo, não como substituição das obras, da consciência ou da vivência do Evangelho.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>5. Compartilhamento de dados</h2>
+      <p>
+        O Luz nas Obras não vende dados pessoais e não compartilha informações dos
+        estudantes para publicidade.
+      </p>
+      <p>
+        Dados podem ser tratados por provedores técnicos necessários para autenticação,
+        banco de dados, hospedagem, notificações, diagnóstico e recursos de IA. Esse uso
+        ocorre apenas para viabilizar o funcionamento do aplicativo.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>6. Base legal e LGPD</h2>
+      <p>
+        O tratamento de dados pessoais observa os princípios da Lei Geral de Proteção
+        de Dados Pessoais (LGPD), incluindo finalidade, necessidade, transparência,
+        segurança e respeito aos direitos do titular.
+      </p>
+      <p>
+        O estudante pode solicitar informações, correção ou exclusão de dados pessoais
+        entrando em contato pelo e-mail informado nesta página.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>7. Segurança e retenção</h2>
+      <p>
+        Buscamos manter os dados protegidos por meio dos recursos de segurança das
+        plataformas utilizadas. Nenhum sistema é absolutamente imune a falhas, mas o
+        projeto é conduzido com cuidado para reduzir riscos e corrigir problemas.
+      </p>
+      <p>
+        Dados de estudo podem permanecer armazenados enquanto a conta estiver ativa ou
+        enquanto forem necessários para oferecer os recursos escolhidos pelo estudante.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>8. Uso por menores</h2>
+      <p>
+        O aplicativo é voltado ao estudo e pode ser acessado por diferentes públicos.
+        Quando utilizado por menores de idade, recomendamos acompanhamento responsável
+        de pais, responsáveis ou educadores.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>9. Contato</h2>
+      <p>
+        Para dúvidas sobre privacidade, dados pessoais, feedbacks ou solicitações
+        relacionadas ao aplicativo, entre em contato pelo e-mail
+        <a class="contact" href="mailto:luz.nas.obras@gmail.com">luz.nas.obras@gmail.com</a>.
+      </p>
+    </section>
+
+    <p class="note">
+      Ultima atualizacao: 30 de maio de 2026. Esta politica pode ser aprimorada conforme
+      o aplicativo evoluir, especialmente para atender requisitos de publicacao em lojas
+      de aplicativos.
+    </p>
+
+    <footer>
+      <span>Estudo Espírita-Cristão · Gratuito para sempre</span>
+      <div class="footer-links">
+        <a href="manual.html">Manual</a>
+        <a href="mailto:luz.nas.obras@gmail.com">Contato</a>
+        <a href="https://luz-nas-obras.vercel.app">Abrir o aplicativo</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
