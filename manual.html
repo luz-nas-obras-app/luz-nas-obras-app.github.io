@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual do estudante | Luz nas Obras</title>
+  <meta name="description" content="Guia básico para começar a estudar no Luz nas Obras, aplicativo gratuito de estudo Espírita-Cristão.">
+  <meta name="theme-color" content="#141728">
+  <link rel="canonical" href="https://luz-nas-obras.github.io/manual.html">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark: #1a1a2e;
+      --dark-surface: #16213e;
+      --vine: #4ade80;
+      --vine-light: #86efac;
+      --leaf: #2dd4bf;
+      --light: #e0d7c1;
+      --muted: #a9a18f;
+      --gold: #c4a45a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--dark);
+      color: var(--light);
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+    .page {
+      width: min(920px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2rem 0 4rem;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 4rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      color: var(--light);
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+    }
+
+    .brand span,
+    h1,
+    h2 {
+      font-family: 'Crimson Pro', Georgia, serif;
+      font-weight: 500;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0.55rem 1.15rem;
+      border-radius: 999px;
+      border: 1px solid rgba(224, 215, 193, 0.16);
+      color: var(--light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: transform 0.15s, border-color 0.2s, background 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(74, 222, 128, 0.35);
+      background: rgba(74, 222, 128, 0.08);
+    }
+
+    .btn-primary {
+      background: var(--vine);
+      border-color: var(--vine);
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .hero {
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(224, 215, 193, 0.12);
+      margin-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      display: block;
+      color: var(--vine-light);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 7vw, 5.2rem);
+      line-height: 0.98;
+      margin-bottom: 1.25rem;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: rgba(224, 215, 193, 0.82);
+      font-size: 1.08rem;
+    }
+
+    .manual-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.25rem;
+    }
+
+    .section {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(224, 215, 193, 0.08);
+    }
+
+    h2 {
+      color: var(--light);
+      font-size: clamp(1.65rem, 4vw, 2.2rem);
+      margin-bottom: 0.75rem;
+    }
+
+    p,
+    li {
+      color: rgba(224, 215, 193, 0.82);
+    }
+
+    ul,
+    ol {
+      padding-left: 1.25rem;
+      margin-top: 0.7rem;
+    }
+
+    li + li { margin-top: 0.35rem; }
+    strong { color: var(--light); font-weight: 500; }
+
+    .note {
+      margin: 2rem 0;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(74, 222, 128, 0.16);
+      border-radius: 10px;
+      background: rgba(22, 33, 62, 0.78);
+      color: rgba(224, 215, 193, 0.86);
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      .page { width: min(100% - 1.25rem, 920px); padding-top: 1rem; }
+      .topbar { align-items: flex-start; flex-direction: column; margin-bottom: 3rem; }
+      .top-actions { justify-content: flex-start; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="Luz nas Obras">
+        <span>Luz nas Obras</span>
+      </a>
+      <div class="top-actions">
+        <a href="index.html" class="btn">Voltar para a apresentação</a>
+        <a href="https://luz-nas-obras.vercel.app" class="btn btn-primary">Abrir o app</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <span class="eyebrow">Guia inicial</span>
+      <h1>Manual básico do estudante</h1>
+      <p class="lead">
+        Este guia apresenta os primeiros passos para estudar com tranquilidade no Luz nas Obras,
+        um aplicativo gratuito para apoiar o estudo Espírita-Cristão.
+      </p>
+    </section>
+
+    <div class="manual-grid">
+      <section class="section">
+        <h2>1. Entrando no aplicativo</h2>
+        <p>No painel principal você encontrará os caminhos de estudo: O Livro dos Espíritos, O Evangelho Segundo o Espiritismo, Bíblia, Meus Estudos, Busca Espírita-Cristã e o Lume.</p>
+      </section>
+
+      <section class="section">
+        <h2>2. Criando sua conta</h2>
+        <p>A conta permite salvar e sincronizar seus estudos entre aparelhos.</p>
+        <ul>
+          <li>Salvar anotações, reflexões e estudos preparados pelo Lume.</li>
+          <li>Concluir questões e continuar leituras em outro aparelho.</li>
+          <li>Usar notificações e lembretes, quando disponíveis.</li>
+          <li>Enviar feedback pelo app.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>3. O Livro dos Espíritos</h2>
+        <p>Na área do Livro dos Espíritos, navegue pela lista de questões ou busque diretamente pelo número.</p>
+        <ul>
+          <li>Leia pergunta, resposta e comentários quando existirem.</li>
+          <li>Crie anotações pessoais e marque a questão como concluída.</li>
+          <li>Peça uma reflexão ao Lume e veja pontes de estudo sugeridas.</li>
+          <li>Acesse vínculos com Bíblia e Evangelho quando disponíveis.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>4. O Evangelho Segundo o Espiritismo</h2>
+        <p>O Evangelho está organizado por capítulos e itens, com espaço para leitura calma e reflexão pessoal.</p>
+        <ul>
+          <li>Ajuste o tamanho da fonte nas configurações de leitura.</li>
+          <li>Crie anotações por item.</li>
+          <li>Abra referências bíblicas citadas no texto.</li>
+          <li>Veja pontes sugeridas para O Livro dos Espíritos.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>5. Bíblia e Strong</h2>
+        <p>Na área da Bíblia, escolha o livro, capítulo e tradução desejada.</p>
+        <ul>
+          <li>Leia a Bíblia ACF ou a ARA Strong.</li>
+          <li>Na ARA Strong, palavras sublinhadas abrem informações do idioma original.</li>
+          <li>Crie anotações por versículo e vínculos com questões do Livro dos Espíritos.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>6. Usando o Lume</h2>
+        <p>O Lume é o assistente de estudo com IA do Luz nas Obras.</p>
+        <ul>
+          <li>Ele apoia reflexões, estudos temáticos, perguntas doutrinárias e caminhos de leitura.</li>
+          <li>Não é uma pessoa e não representa orientação espiritual.</li>
+          <li>As respostas podem conter erros; confira sempre as fontes.</li>
+          <li>Perguntas fora do escopo Espírita-Cristão são recusadas com gentileza.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. Meus Estudos</h2>
+        <p>Em Meus Estudos você encontra reflexões, estudos temáticos, estudos bíblicos orientados, anotações pessoais e histórico de leitura.</p>
+      </section>
+
+      <section class="section">
+        <h2>8. Busca Espírita-Cristã</h2>
+        <p>A busca reúne caminhos de leitura nas obras, na Bíblia e no seu acervo pessoal. Ela ajuda a encontrar material de estudo, sem afirmar automaticamente que todos os resultados estejam vinculados entre si.</p>
+      </section>
+
+      <section class="section">
+        <h2>9. Leitura confortável</h2>
+        <p>Use as configurações de leitura para aumentar ou reduzir a fonte, escolher a versão bíblica e tornar o estudo mais confortável no celular, tablet ou computador.</p>
+      </section>
+
+      <section class="section">
+        <h2>10. Uso offline</h2>
+        <p>Você pode baixar a biblioteca offline para continuar estudando mesmo quando a internet falhar.</p>
+        <ul>
+          <li>Leituras baixadas continuam disponíveis.</li>
+          <li>Novas anotações ficam guardadas no aparelho.</li>
+          <li>A sincronização acontece quando a conexão voltar.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>11. Feedback</h2>
+        <p>Use o botão Feedback no app para enviar sugestões, problemas encontrados ou comentários. Esse retorno ajuda a cuidar do aplicativo com atenção e carinho.</p>
+      </section>
+
+      <section class="section">
+        <h2>12. Uma forma simples de começar</h2>
+        <ol>
+          <li>Crie sua conta.</li>
+          <li>Abra O Livro dos Espíritos e leia uma questão.</li>
+          <li>Faça uma anotação pessoal.</li>
+          <li>Marque a questão como concluída.</li>
+          <li>Leia um item do Evangelho.</li>
+          <li>Abra uma passagem bíblica relacionada ao seu estudo.</li>
+          <li>Use o Lume apenas como apoio, conferindo sempre as fontes.</li>
+        </ol>
+      </section>
+    </div>
+
+    <p class="note">
+      O Luz nas Obras é oferecido gratuitamente como uma ferramenta de estudo. Seu propósito é apoiar quem deseja estudar a Doutrina Espírita e o Evangelho com seriedade, simplicidade e acolhimento.
+    </p>
+
+    <footer>
+      <span>Estudo Espírita-Cristão · Gratuito para sempre</span>
+      <a href="https://luz-nas-obras.vercel.app">Abrir o aplicativo</a>
+    </footer>
+  </main>
+</body>
+</html>
