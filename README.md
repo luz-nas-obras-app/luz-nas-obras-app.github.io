@@ -15,7 +15,7 @@ Arquivos principais:
 
 - `index.html`: apresentacao publica do projeto.
 - `manual.html`: manual basico do estudante.
-- `privacidade.html`: politica inicial de privacidade, LGPD e compromisso de gratuidade.
+- `privacidade.html`: politica de privacidade, LGPD, exclusao de conta, provedores tecnicos e compromisso de gratuidade.
 - `social-preview.png`: imagem social usada em compartilhamentos.
 
 ## Publicacao no GitHub Pages
@@ -26,5 +26,5 @@ a raiz do repositorio.
 
 ## Pendencias institucionais
 
-- Revisar a politica de privacidade antes da publicacao em lojas de aplicativos.
+- Acompanhar exigencias especificas da Google Play, especialmente Data Safety, dominio final e textos complementares.
 - Adicionar termos complementares se uma loja exigir textos especificos.

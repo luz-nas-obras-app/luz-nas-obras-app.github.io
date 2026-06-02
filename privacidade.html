@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacidade e compromisso | Luz nas Obras</title>
-  <meta name="description" content="Política inicial de privacidade, uso de dados e compromisso de gratuidade do Luz nas Obras.">
+  <meta name="description" content="Política de privacidade, uso de dados, exclusão de conta e compromisso de gratuidade do Luz nas Obras.">
   <meta name="theme-color" content="#141728">
   <link rel="canonical" href="https://luz-nas-obras-app.github.io/privacidade.html">
   <link rel="icon" type="image/svg+xml" href="icon.svg">
@@ -220,12 +220,12 @@
       <h2>1. Finalidade do aplicativo</h2>
       <p>
         O Luz nas Obras é disponibilizado para estudo Espírita-Cristão, reunindo obras
-        doutrinárias, Bíblia, anotações, progresso de leitura, busca, recursos offline
-        e apoio de inteligência artificial por meio do Lume.
+        doutrinárias, Bíblia, anotações, progresso de leitura, busca, recursos offline,
+        notificações, voz e apoio de inteligência artificial por meio do Lume.
       </p>
       <p>
-        O aplicativo é gratuito, não possui anúncios e não tem finalidade comercial de
-        venda de dados dos estudantes.
+        O aplicativo é gratuito, não possui anúncios, não vende dados pessoais e não
+        compartilha informações dos estudantes para publicidade.
       </p>
     </section>
 
@@ -233,11 +233,12 @@
       <h2>2. Dados que podem ser tratados</h2>
       <p>Dependendo do uso do aplicativo, podem ser armazenadas informações como:</p>
       <ul>
-        <li>dados básicos de conta e autenticação, como identificador de usuário e e-mail;</li>
-        <li>anotações, reflexões, estudos salvos, vínculos criados e progresso de leitura;</li>
-        <li>feedbacks enviados pelo estudante, incluindo texto, tela de origem e informações técnicas do aparelho quando disponíveis;</li>
-        <li>preferências de leitura, versão bíblica, tamanho de fonte e configurações do app;</li>
+        <li>dados básicos de conta e autenticação, como identificador de usuário, e-mail, nome e foto quando informados;</li>
+        <li>anotações, reflexões, estudos salvos, vínculos criados, votos, questões concluídas e progresso de leitura;</li>
+        <li>feedbacks enviados pelo estudante, incluindo texto, tela de origem, versão do app e informações técnicas quando disponíveis;</li>
+        <li>preferências de leitura, versão bíblica, tamanho de fonte, lembrete diário e configurações do app;</li>
         <li>tokens técnicos para notificações, quando o estudante ativa esse recurso no aparelho;</li>
+        <li>conteúdos mantidos localmente para funcionamento offline, como biblioteca baixada e preferências do aparelho;</li>
         <li>registros técnicos necessários para segurança, diagnóstico, funcionamento e correção de erros.</li>
       </ul>
     </section>
@@ -249,6 +250,7 @@
         <li>permitir que o estudante salve e sincronize seus estudos entre aparelhos;</li>
         <li>manter leituras, anotações, progresso, histórico e preferências;</li>
         <li>enviar lembretes ou notificações quando autorizados;</li>
+        <li>processar pedidos de IA e síntese de voz acionados pelo próprio estudante;</li>
         <li>melhorar a experiência, corrigir erros e responder feedbacks;</li>
         <li>preservar a segurança e o funcionamento adequado do aplicativo.</li>
       </ul>
@@ -259,7 +261,8 @@
       <p>
         O Lume é um assistente de estudo com IA, voltado ao escopo Espírita-Cristão.
         Ao usar recursos de IA, a pergunta ou o conteúdo enviado pode ser processado
-        por serviços externos necessários para gerar a resposta.
+        pelo servidor do aplicativo e por provedores habilitados, como DeepSeek,
+        Google Gemini ou OpenAI, conforme disponibilidade técnica.
       </p>
       <p>
         O Lume não é uma pessoa, não representa orientação espiritual e pode cometer
@@ -276,8 +279,12 @@
       </p>
       <p>
         Dados podem ser tratados por provedores técnicos necessários para autenticação,
-        banco de dados, hospedagem, notificações, diagnóstico e recursos de IA. Esse uso
-        ocorre apenas para viabilizar o funcionamento do aplicativo.
+        banco de dados, hospedagem, notificações, diagnóstico, recursos de IA e síntese de
+        voz. O aplicativo usa Firebase Authentication, Cloud Firestore e Firebase Cloud
+        Messaging para conta, sincronização e notificações; provedores de IA como DeepSeek,
+        Google Gemini ou OpenAI quando o estudante aciona o Lume; e Zion Vozes quando o
+        estudante solicita leitura em voz. Esse uso ocorre apenas para viabilizar o
+        funcionamento do aplicativo.
       </p>
     </section>
 
@@ -290,7 +297,9 @@
       </p>
       <p>
         O estudante pode solicitar informações, correção ou exclusão de dados pessoais
-        entrando em contato pelo e-mail informado nesta página.
+        entrando em contato pelo e-mail informado nesta página. Também pode iniciar a
+        exclusão da conta pela rota pública
+        <a class="contact" href="https://luz-nas-obras.vercel.app/excluir-conta">https://luz-nas-obras.vercel.app/excluir-conta</a>.
       </p>
     </section>
 
@@ -304,15 +313,20 @@
       <p>
         Dados de estudo podem permanecer armazenados enquanto a conta estiver ativa ou
         enquanto forem necessários para oferecer os recursos escolhidos pelo estudante.
+        Ao excluir a conta, perfil, progresso, anotações, estudos, conclusões, vínculos,
+        votos, feedbacks, tokens de notificação e preferências vinculadas ao usuário são
+        apagados no servidor. Dados que já estejam salvos localmente em outro aparelho
+        offline podem permanecer nele até que o estudante limpe os dados do aplicativo ou
+        o desinstale.
       </p>
     </section>
 
     <section class="section">
       <h2>8. Uso por menores</h2>
       <p>
-        O aplicativo é voltado ao estudo e pode ser acessado por diferentes públicos.
-        Quando utilizado por menores de idade, recomendamos acompanhamento responsável
-        de pais, responsáveis ou educadores.
+        O aplicativo não é direcionado especificamente a crianças. Quando utilizado por
+        menores de idade, recomendamos acompanhamento responsável de pais, responsáveis
+        ou educadores.
       </p>
     </section>
 
@@ -326,9 +340,8 @@
     </section>
 
     <p class="note">
-      Ultima atualizacao: 30 de maio de 2026. Esta politica pode ser aprimorada conforme
-      o aplicativo evoluir, especialmente para atender requisitos de publicacao em lojas
-      de aplicativos.
+      Ultima atualizacao: 2 de junho de 2026. Esta politica pode ser aprimorada conforme
+      o aplicativo evoluir e conforme exigencias de publicacao em lojas de aplicativos.
     </p>
 
     <footer>
