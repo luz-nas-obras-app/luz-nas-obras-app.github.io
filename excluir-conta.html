@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excluir conta | Luz nas Obras</title>
+  <meta name="description" content="Solicite a exclusao da sua conta e dos dados associados ao aplicativo Luz nas Obras.">
+  <meta name="theme-color" content="#141728">
+  <link rel="canonical" href="https://luz-nas-obras-app.github.io/excluir-conta.html">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark: #1a1a2e;
+      --dark-surface: #16213e;
+      --vine: #4ade80;
+      --vine-light: #86efac;
+      --light: #e0d7c1;
+      --muted: #a9a18f;
+      --gold: #c4a45a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--dark);
+      color: var(--light);
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+
+    .page {
+      width: min(920px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2rem 0 4rem;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 4rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      color: var(--light);
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+    }
+
+    .brand span,
+    h1,
+    h2 {
+      font-family: 'Crimson Pro', Georgia, serif;
+      font-weight: 500;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0.55rem 1.15rem;
+      border-radius: 999px;
+      border: 1px solid rgba(224, 215, 193, 0.16);
+      color: var(--light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: transform 0.15s, border-color 0.2s, background 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: rgba(74, 222, 128, 0.35);
+      background: rgba(74, 222, 128, 0.08);
+    }
+
+    .btn-primary {
+      background: var(--vine);
+      border-color: var(--vine);
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .hero {
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(224, 215, 193, 0.12);
+      margin-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      display: block;
+      color: var(--vine-light);
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 7vw, 5.2rem);
+      line-height: 0.98;
+      margin-bottom: 1.25rem;
+    }
+
+    .lead {
+      max-width: 760px;
+      color: rgba(224, 215, 193, 0.84);
+      font-size: 1.08rem;
+    }
+
+    .section {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(224, 215, 193, 0.08);
+    }
+
+    h2 {
+      color: var(--light);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin-bottom: 0.8rem;
+    }
+
+    p, li {
+      color: rgba(224, 215, 193, 0.82);
+    }
+
+    ul, ol {
+      padding-left: 1.2rem;
+      margin-top: 0.75rem;
+    }
+
+    li + li {
+      margin-top: 0.45rem;
+    }
+
+    .notice {
+      margin: 1rem 0;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(74, 222, 128, 0.22);
+      border-radius: 8px;
+      background: rgba(74, 222, 128, 0.08);
+      color: rgba(224, 215, 193, 0.9);
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      padding-top: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 3rem;
+      }
+
+      .top-actions {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Navegacao principal">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="">
+        <span>Luz nas Obras</span>
+      </a>
+      <div class="top-actions">
+        <a class="btn" href="privacidade.html">Privacidade</a>
+        <a class="btn btn-primary" href="https://luz-nas-obras.vercel.app/excluir-conta">Abrir no app</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <span class="eyebrow">Conta e dados pessoais</span>
+      <h1>Excluir conta</h1>
+      <p class="lead">
+        Esta pagina oferece um caminho publico para solicitar a exclusao da sua conta
+        no aplicativo Luz nas Obras e dos dados pessoais associados a ela.
+      </p>
+    </header>
+
+    <section class="section">
+      <h2>Como solicitar</h2>
+      <p>
+        Se voce ainda tem acesso ao app, o caminho mais direto e entrar na sua conta e abrir
+        a tela Excluir conta. Ela inicia o processo autenticado de remocao dos dados vinculados
+        ao seu usuario.
+      </p>
+      <p class="notice">
+        Caminho no app: <a href="https://luz-nas-obras.vercel.app/excluir-conta">https://luz-nas-obras.vercel.app/excluir-conta</a>
+      </p>
+      <p>
+        Se voce nao consegue acessar o app, envie uma solicitacao pelo e-mail
+        <a href="mailto:luz.nas.obras@gmail.com?subject=Exclusao%20de%20conta%20-%20Luz%20nas%20Obras">luz.nas.obras@gmail.com</a>.
+        Inclua o e-mail usado na conta e informe que deseja excluir sua conta do Luz nas Obras.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>O que sera removido</h2>
+      <p>
+        A exclusao remove a conta de autenticacao e os dados pessoais associados ao usuario,
+        incluindo estudos, reflexoes, anotacoes, favoritos, progresso, preferencias, tokens de
+        notificacao e feedbacks vinculados a conta.
+      </p>
+      <p>
+        Dados mantidos apenas localmente no dispositivo, como conteudo offline, podem permanecer
+        ate que voce limpe os dados do navegador/app instalado ou remova o aplicativo.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Prazo e confirmacao</h2>
+      <p>
+        As solicitacoes recebidas por e-mail serao analisadas em prazo razoavel. Podemos pedir
+        informacoes adicionais para confirmar que a solicitacao esta relacionada a conta correta
+        antes de concluir a remocao.
+      </p>
+      <p>
+        Quando a exclusao for concluida, enviaremos uma confirmacao pelo mesmo canal de contato,
+        sempre que houver um e-mail valido para retorno.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Politica de privacidade</h2>
+      <p>
+        Para detalhes sobre coleta, uso, compartilhamento, retencao e direitos do titular,
+        consulte a <a href="privacidade.html">Politica de Privacidade do Luz nas Obras</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>Luz nas Obras - aplicativo gratuito de estudo espirita-cristao.</p>
+      <p class="muted">Ultima atualizacao: 3 de junho de 2026.</p>
+    </footer>
+  </main>
+</body>
+</html>

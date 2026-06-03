@@ -16,6 +16,7 @@ Arquivos principais:
 - `index.html`: apresentacao publica do projeto.
 - `manual.html`: manual basico do estudante.
 - `privacidade.html`: politica de privacidade, LGPD, exclusao de conta, provedores tecnicos e compromisso de gratuidade.
+- `excluir-conta.html`: caminho publico para solicitar exclusao de conta e dados associados.
 - `social-preview.png`: imagem social usada em compartilhamentos.
 
 ## Publicacao no GitHub Pages
@@ -26,5 +27,5 @@ a raiz do repositorio.
 
 ## Pendencias institucionais
 
-- Acompanhar exigencias especificas da Google Play, especialmente Data Safety, dominio final e textos complementares.
+- Acompanhar exigencias especificas da Google Play, especialmente Data Safety e textos complementares.
 - Adicionar termos complementares se uma loja exigir textos especificos.
