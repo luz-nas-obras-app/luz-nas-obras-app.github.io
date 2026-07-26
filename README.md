@@ -3,9 +3,9 @@
 Pagina publica do aplicativo gratuito Luz nas Obras, dedicada a apresentar o estudo
 Espirita-Cristao e encaminhar o estudante para o aplicativo.
 
-Publicacao atual: https://luz-nas-obras-app.github.io/
+Publicacao atual: https://luz-nas-obras.org/
 
-Aplicativo: https://luz-nas-obras.vercel.app/
+Aplicativo: https://app.luz-nas-obras.org/
 
 ## Visualizacao local
 
